@@ -179,13 +179,18 @@ const Movie = () => {
                                         >
                                             {/* <option disabled>Select</option> */}
                                             <option value="Action" disabled={selectedCategories.includes("Action")}>Action</option>
-                                            <option value="Horror" disabled={selectedCategories.includes("Horror")}>Horror</option>
-                                            <option value="Thriller" disabled={selectedCategories.includes("Thriller")}>Thriller</option>
-                                            <option value="Drama" disabled={selectedCategories.includes("Drama")}>Drama</option>
-                                            <option value="Comedy" disabled={selectedCategories.includes("Comedy")}>Comedy</option>
-                                            <option value="Science fiction" disabled={selectedCategories.includes("Science fiction")}>Science fiction</option>
                                             <option value="Adventure" disabled={selectedCategories.includes("Adventure")}>Adventure</option>
+                                            <option value="Bollywood" disabled={selectedCategories.includes("Bollywood")}>Bollywood</option>
+                                            <option value="Comedy" disabled={selectedCategories.includes("Comedy")}>Comedy</option>
+                                            <option value="Drama" disabled={selectedCategories.includes("Drama")}>Drama</option>
+                                            <option value="Hollywood" disabled={selectedCategories.includes("Hollywood")}>Hollywood</option>
+                                            <option value="Horror" disabled={selectedCategories.includes("Horror")}>Horror</option>
+                                            <option value="Pakistani" disabled={selectedCategories.includes("Pakistani")}>Pakistani</option>
+                                            <option value="Punjabi" disabled={selectedCategories.includes("Punjabi")}>Punjabi</option>
                                             <option value="Romance" disabled={selectedCategories.includes("Romance")}>Romance</option>
+                                            <option value="Science fiction" disabled={selectedCategories.includes("Science fiction")}>Science fiction</option>
+                                            <option value="Tamil" disabled={selectedCategories.includes("Tamil")}>Tamil</option>
+                                            <option value="Thriller" disabled={selectedCategories.includes("Thriller")}>Thriller</option>
                                         </select>
                                         <div className="selected-options mt-3">
                                             {selectedCategories.length > 0 && (
@@ -239,7 +244,7 @@ const Movie = () => {
                                 </form>
                                 {progressComplete === false && videoProgress > 0 &&
                                     <p style={{ backgroundColor: "red", borderRadius: "5px", textAlign: "center", color: "whitesmoke" }}>Video Upload Progress: {videoProgress}%</p>}
-                                {progressComplete === true && <p style={{ backgroundColor: "green", borderRadius: "5px", textAlign: "center", color: "whitesmoke", padding: 8 }}>Video uploaded successfully but wait for upload to server.</p>}
+                                {progressComplete === true && <p style={{ backgroundColor: "green", borderRadius: "5px", textAlign: "center", color: "whitesmoke", padding: 8 }}>Video uploaded successfully but wait for upload to server. This may take a few seconds or a few minutes. Please wait.</p>}
 
                             </div>
                         </div>
